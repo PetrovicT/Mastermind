@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podešavanja</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <script src="skocko-podesavanja.js"></script>
+</head>
+
+<body onload="zapocniPodesavanja()">
+
+    <div class="container" style="background-color: #f5f5ec;">
+        <div id="igrac1">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="uputstvo">Igrač 1</h1>
+                    <p class="blue-text">Unesite svoju kombinaciju:</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-3">&nbsp</div>
+                <div class="col-6 kartice">
+                    <div class="kartica fokus_1" ;><img class="icon" src="skocko-dodatno/upitnik2.png" alt="?"></div>
+                    <div class="kartica" ;><img class="icon" src="skocko-dodatno/upitnik2.png" alt="?"></div>
+                    <div class="kartica" ;><img class="icon" src="skocko-dodatno/upitnik2.png" alt="?"></div>
+                    <div class="kartica" ;><img class="icon" src="skocko-dodatno/upitnik2.png" alt="?"></div>
+                </div>
+                <div class="col-3">&nbsp </div>
+            </div>
+
+
+            <div class="blue-text" id="gotova_komb">Uneli ste svoju kombinaciju!</div>
+            <div class="row move">
+                <div class="col-3">&nbsp</div>
+                <div class="col-6 kartice">
+                    <div class="izbor"><img class="icon Srbija " src="skocko-dodatno/Serbia.png" alt="Srbija"></div>
+                    <div class="izbor"><img class="icon Španija" src="skocko-dodatno/Spain.png" alt="Španija"></div>
+                    <div class="izbor"><img class="icon USA" src="skocko-dodatno/United_States.png" alt="USA"></div>
+                    <div class="izbor"><img class="icon Južna_Koreja" src="skocko-dodatno/South_Korea.png"
+                            alt="JKoreja"></div>
+                    <div class="izbor"><img class="icon Kanada" src="skocko-dodatno/Canada.png" alt="Kanada"></div>
+                    <div class="izbor"><img class="icon Palestina" src="skocko-dodatno/Palestine.png" alt="Palestina">
+                    </div>
+                </div>
+                <div class="col-3">&nbsp </div>
+            </div>
+            <br>
+
+            <div class="row right">
+                <div class="col-12">
+                    <input class="dugme" id="dugme1" type="button" value="Ponovo popuni kombinaciju">
+                    <input class="dugme" id="dugme2" type="button" value="Potvrdi">
+                </div>
+            </div>
+            <br>
+            <br>
+
+        </div>
+
+        <div id="igrac2">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="uputstvo">Igrač 2</h1>
+                    <p class="blue-text">Unesite svoju kombinaciju:</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-3">&nbsp</div>
+                <div class="col-6 kartice">
+                    <div class="kartica fokus_2" ;><img class="icon" src="skocko-dodatno/upitnik2.png" alt="?"></div>
+                    <div class="kartica" ;><img class="icon" src="skocko-dodatno/upitnik2.png" alt="?"></div>
+                    <div class="kartica" ;><img class="icon" src="skocko-dodatno/upitnik2.png" alt="?"></div>
+                    <div class="kartica" ;><img class="icon" src="skocko-dodatno/upitnik2.png" alt="?"></div>
+                </div>
+                <div class="col-3">&nbsp </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-3">&nbsp</div>
+                <div class="col-6 kartice">
+                    <div class="izbor sacekaj_igraca"><img class="icon Srbija " src="skocko-dodatno/Serbia.png"
+                            alt="Srbija"></div>
+                    <div class="izbor sacekaj_igraca"><img class="icon Španija" src="skocko-dodatno/Spain.png"
+                            alt="Španija"></div>
+                    <div class="izbor sacekaj_igraca"><img class="icon USA" src="skocko-dodatno/United_States.png"
+                            alt="USA"></div>
+                    <div class="izbor sacekaj_igraca"><img class="icon Južna_Koreja"
+                            src="skocko-dodatno/South_Korea.png" alt="JKoreja"></div>
+                    <div class="izbor sacekaj_igraca"><img class="icon Kanada" src="skocko-dodatno/Canada.png"
+                            alt="Kanada"></div>
+                    <div class="izbor sacekaj_igraca"><img class="icon Palestina" src="skocko-dodatno/Palestine.png"
+                            alt="Palestina"></div>
+                </div>
+                <div class="col-3">&nbsp </div>
+            </div>
+            <br>
+            <div class="blue-text" id="cekaj_komb">Sačekajte dok prvi igrač ne unese svoju kombinaciju!</div>
+
+            <br> <br>
+            <div class="row right">
+                <div class="col-12">
+                    <input class="dugme sacekaj_igraca" id="dugme3" type="button" value="Ponovo popuni kombinaciju">
+                    <input class="dugme sacekaj_igraca" id="dugme4" type="button" value="Potvrdi">
+
+                </div>
+            </div>
+            <br>
+            <br>
+        </div>
+    </div>
+</body>
+</html>

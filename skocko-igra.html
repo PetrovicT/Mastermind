@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Igra Skočko</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <script src="skocko-podesavanja.js"></script>
+    <script src="skocko-igra.js"></script>
+</head>
+
+<body onload="zapocni_igru()">
+    <div class="container" style="background-color: #f5f5ec">
+        <br>
+        <div class=" row">
+            <div class="col-md-6 col-sm-12" id="igrac1">
+                <div class="row">
+                    <div class="col-1">&nbsp</div>
+                    <div class="col-7 centar">
+                        <div class="tajmer">
+                            <h1 class="tajmer_text">60</h1>
+                        </div>
+
+                    </div>
+                    <div class="col-4">&nbsp</div>
+                </div>
+                <br>
+                <div class="row red_igra trenutni_red" id="red_11">
+                    <div class="col-1">&nbsp</div>
+                    <div class="col-7 kartice">
+                        <div class="kartica_igra fokus_1"><img class="icon" src="skocko-dodatno/upitnik2.png" alt="?">
+                        </div>
+                        <div class="kartica_igra"><img class="icon" src="skocko-dodatno/upitnik2.png" alt="?"></div>
+                        <div class="kartica_igra"><img class="icon" src="skocko-dodatno/upitnik2.png" alt="?"></div>
+                        <div class="kartica_igra"><img class="icon" src="skocko-dodatno/upitnik2.png" alt="?"></div>
+                    </div>
+                    <div class="col-4 vertical_raspored">
+                        <div class="raspored">
+                            <div class="kartica_igra_mini">&nbsp</div>
+                            <div class="kartica_igra_mini">&nbsp</div>
+                            <div class="kartica_igra_mini">&nbsp</div>
+                            <div class="kartica_igra_mini">&nbsp</div>
+                        </div>
+                        <div class="raspored">
+                            <div class="dugme_proveri">Proveri</div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row red_igra" id="red_21">
+                    <div class="col-1">&nbsp</div>
+                    <div class="col-7 kartice">
+                        <div class="kartica_igra"><img class="icon" src="skocko-dodatno/upitnik2.png" alt="?"></div>
+                        <div class="kartica_igra"><img class="icon" src="skocko-dodatno/upitnik2.png" alt="?"></div>
+                        <div class="kartica_igra"><img class="icon" src="skocko-dodatno/upitnik2.png" alt="?"></div>
+                        <div class="kartica_igra"><img class="icon" src="skocko-dodatno/upitnik2.png" alt="?"></div>
+                    </div>
+                    <div class="col-4 vertical_raspored">
+                        <div class="raspored">
+                            <div class="kartica_igra_mini">&nbsp</div>
+                            <div class="kartica_igra_mini">&nbsp</div>
+                            <div class="kartica_igra_mini">&nbsp</div>
+                            <div class="kartica_igra_mini">&nbsp</div>
+                        </div>
+                        <div class="raspored">
+                            <div class="dugme_proveri">Proveri</div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row red_igra" id="red_31">
+                    <div class="col-1">&nbsp</div>
+                    <div class="col-7 kartice">
+                        <div class="kartica_igra"><img class="icon" src="skocko-dodatno/upitnik2.png" alt="?"></div>
+                        <div class="kartica_igra"><img class="icon" src="skocko-dodatno/upitnik2.png" alt="?"></div>
+                        <div class="kartica_igra"><img class="icon" src="skocko-dodatno/upitnik2.png" alt="?"></div>
+                        <div class="kartica_igra"><img class="icon" src="skocko-dodatno/upitnik2.png" alt="?"></div>
+                    </div>
+                    <div class="col-4 vertical_raspored">
+                        <div class="raspored">
+                            <div class="kartica_igra_mini">&nbsp</div>
+                            <div class="kartica_igra_mini">&nbsp</div>
+                            <div class="kartica_igra_mini">&nbsp</div>
+                            <div class="kartica_igra_mini">&nbsp</div>
+                        </div>
+                        <div class="raspored">
+                            <div class="dugme_proveri">Proveri</div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row red_igra" id="red_41">
+                    <div class="col-1">&nbsp</div>
+                    <div class="col-7 kartice">
+                        <div class="kartica_igra"><img class="icon" src="skocko-dodatno/upitnik2.png" alt="?"></div>
+                        <div class="kartica_igra"><img class="icon" src="skocko-dodatno/upitnik2.png" alt="?"></div>
+                        <div class="kartica_igra"><img class="icon" src="skocko-dodatno/upitnik2.png" alt="?"></div>
+                        <div class="kartica_igra"><img class="icon" src="skocko-dodatno/upitnik2.png" alt="?"></div>
+                    </div>
+                    <div class="col-4 vertical_raspored">
+                        <div class="raspored">
+                            <div class="kartica_igra_mini">&nbsp</div>
+                            <div class="kartica_igra_mini">&nbsp</div>
+                            <div class="kartica_igra_mini">&nbsp</div>
+                            <div class="kartica_igra_mini">&nbsp</div>
+                        </div>
+                        <div class="raspored">
+                            <div class="dugme_proveri">Proveri</div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row red_igra" id="red_51">
+                    <div class="col-1">&nbsp</div>
+                    <div class="col-7 kartice">
+                        <div class="kartica_igra"><img class="icon" src="skocko-dodatno/upitnik2.png" alt="?"></div>
+                        <div class="kartica_igra"><img class="icon" src="skocko-dodatno/upitnik2.png" alt="?"></div>
+                        <div class="kartica_igra"><img class="icon" src="skocko-dodatno/upitnik2.png" alt="?"></div>
+                        <div class="kartica_igra"><img class="icon" src="skocko-dodatno/upitnik2.png" alt="?"></div>
+                    </div>
+                    <div class="col-4 vertical_raspored">
+                        <div class="raspored">
+                            <div class="kartica_igra_mini">&nbsp</div>
+                            <div class="kartica_igra_mini">&nbsp</div>
+                            <div class="kartica_igra_mini">&nbsp</div>
+                            <div class="kartica_igra_mini">&nbsp</div>
+                        </div>
+                        <div class="raspored">
+                            <div class="dugme_proveri">Proveri</div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row red_igra " id="red_61">
+                    <div class="col-1">&nbsp</div>
+                    <div class="col-7 kartice">
+                        <div class="kartica_igra"><img class="icon" src="skocko-dodatno/upitnik2.png" alt="?"></div>
+                        <div class="kartica_igra"><img class="icon" src="skocko-dodatno/upitnik2.png" alt="?"></div>
+                        <div class="kartica_igra"><img class="icon" src="skocko-dodatno/upitnik2.png" alt="?"></div>
+                        <div class="kartica_igra"><img class="icon" src="skocko-dodatno/upitnik2.png" alt="?"></div>
+                    </div>
+                    <div class="col-4 vertical_raspored">
+                        <div class="raspored">
+                            <div class="kartica_igra_mini">&nbsp</div>
+                            <div class="kartica_igra_mini">&nbsp</div>
+                            <div class="kartica_igra_mini">&nbsp</div>
+                            <div class="kartica_igra_mini">&nbsp</div>
+                        </div>
+                        <div class="raspored">
+                            <div class="dugme_proveri">Proveri</div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row red_igra " id="red_71">
+                    <div class="col-1">&nbsp</div>
+                    <div class="col-7 kartice">
+                        <div class="kartica_igra"><img class="icon" src="skocko-dodatno/upitnik2.png" alt="?"></div>
+                        <div class="kartica_igra"><img class="icon" src="skocko-dodatno/upitnik2.png" alt="?"></div>
+                        <div class="kartica_igra"><img class="icon" src="skocko-dodatno/upitnik2.png" alt="?"></div>
+                        <div class="kartica_igra"><img class="icon" src="skocko-dodatno/upitnik2.png" alt="?"></div>
+                    </div>
+                    <div class="col-4 vertical_raspored">
+                        <div class="raspored">
+                            <div class="kartica_igra_mini">&nbsp</div>
+                            <div class="kartica_igra_mini">&nbsp</div>
+                            <div class="kartica_igra_mini">&nbsp</div>
+                            <div class="kartica_igra_mini">&nbsp</div>
+                        </div>
+                        <div class="raspored">
+                            <div class="dugme_proveri">Proveri</div>
+                        </div>
+
+                    </div>
+                </div>
+                <br>
+                <div class="row red_igra">
+                    <div class="col-1">&nbsp</div>
+                    <div class="col-7 raspored">
+                        <div class="izbor_mini"><img class="icon" src="skocko-dodatno/Serbia.png" alt="Srbija"></div>
+                        <div class="izbor_mini"><img class="icon" src="skocko-dodatno/Spain.png" alt="Španija"></div>
+                        <div class="izbor_mini"><img class="icon" src="skocko-dodatno/United_States.png" alt="USA">
+                        </div>
+                        <div class="izbor_mini"><img class="icon" src="skocko-dodatno/South_Korea.png" alt="JKoreja">
+                        </div>
+                        <div class="izbor_mini"><img class="icon" src="skocko-dodatno/Canada.png" alt="Kanada"></div>
+                        <div class="izbor_mini"><img class="icon" src="skocko-dodatno/Palestine.png" alt="Palestina">
+                        </div>
+                    </div>
+                    <div class="col-4">&nbsp</div>
+                </div>
+                <br><br>
+
+            </div>
+            <br>
+            <div class="col-md-6 col-sm-12" id="igrac2">
+                <div class="row">
+                    <div class="col-1">&nbsp</div>
+                    <div class="col-7 centar">
+                        <div class="tajmer">
+                            <h1 class="tajmer_text">60</h1>
+                        </div>
+
+                    </div>
+                    <div class="col-4">&nbsp</div>
+                </div>
+                <br>
+                <div class="row red_igra" id="red_12">
+                    <div class="col-1">&nbsp</div>
+                    <div class="col-7 kartice">
+                        <div class="kartica_igra fokus_2"><img class="icon" src="skocko-dodatno/upitnik2.png" alt="?">
+                        </div>
+                        <div class="kartica_igra"><img class="icon" src="skocko-dodatno/upitnik2.png" alt="?"></div>
+                        <div class="kartica_igra"><img class="icon" src="skocko-dodatno/upitnik2.png" alt="?"></div>
+                        <div class="kartica_igra"><img class="icon" src="skocko-dodatno/upitnik2.png" alt="?"></div>
+                    </div>
+                    <div class="col-4 vertical_raspored">
+                        <div class="raspored">
+                            <div class="kartica_igra_mini">&nbsp</div>
+                            <div class="kartica_igra_mini">&nbsp</div>
+                            <div class="kartica_igra_mini">&nbsp</div>
+                            <div class="kartica_igra_mini">&nbsp</div>
+                        </div>
+                        <div class="raspored">
+                            <div class="dugme_proveri">Proveri</div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row red_igra " id="red_22">
+                    <div class="col-1">&nbsp</div>
+                    <div class="col-7 kartice">
+                        <div class="kartica_igra"><img class="icon" src="skocko-dodatno/upitnik2.png" alt="?"></div>
+                        <div class="kartica_igra"><img class="icon" src="skocko-dodatno/upitnik2.png" alt="?"></div>
+                        <div class="kartica_igra"><img class="icon" src="skocko-dodatno/upitnik2.png" alt="?"></div>
+                        <div class="kartica_igra"><img class="icon" src="skocko-dodatno/upitnik2.png" alt="?"></div>
+                    </div>
+                    <div class="col-4 vertical_raspored">
+                        <div class="raspored">
+                            <div class="kartica_igra_mini">&nbsp</div>
+                            <div class="kartica_igra_mini">&nbsp</div>
+                            <div class="kartica_igra_mini">&nbsp</div>
+                            <div class="kartica_igra_mini">&nbsp</div>
+                        </div>
+                        <div class="raspored">
+                            <div class="dugme_proveri">Proveri</div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row red_igra " id="red_32">
+                    <div class="col-1">&nbsp</div>
+                    <div class="col-7 kartice">
+                        <div class="kartica_igra"><img class="icon" src="skocko-dodatno/upitnik2.png" alt="?"></div>
+                        <div class="kartica_igra"><img class="icon" src="skocko-dodatno/upitnik2.png" alt="?"></div>
+                        <div class="kartica_igra"><img class="icon" src="skocko-dodatno/upitnik2.png" alt="?"></div>
+                        <div class="kartica_igra"><img class="icon" src="skocko-dodatno/upitnik2.png" alt="?"></div>
+                    </div>
+                    <div class="col-4 vertical_raspored">
+                        <div class="raspored">
+                            <div class="kartica_igra_mini">&nbsp</div>
+                            <div class="kartica_igra_mini">&nbsp</div>
+                            <div class="kartica_igra_mini">&nbsp</div>
+                            <div class="kartica_igra_mini">&nbsp</div>
+                        </div>
+                        <div class="raspored">
+                            <div class="dugme_proveri">Proveri</div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row red_igra " id="red_42">
+                    <div class="col-1">&nbsp</div>
+                    <div class="col-7 kartice">
+                        <div class="kartica_igra"><img class="icon" src="skocko-dodatno/upitnik2.png" alt="?"></div>
+                        <div class="kartica_igra"><img class="icon" src="skocko-dodatno/upitnik2.png" alt="?"></div>
+                        <div class="kartica_igra"><img class="icon" src="skocko-dodatno/upitnik2.png" alt="?"></div>
+                        <div class="kartica_igra"><img class="icon" src="skocko-dodatno/upitnik2.png" alt="?"></div>
+                    </div>
+                    <div class="col-4 vertical_raspored">
+                        <div class="raspored">
+                            <div class="kartica_igra_mini">&nbsp</div>
+                            <div class="kartica_igra_mini">&nbsp</div>
+                            <div class="kartica_igra_mini">&nbsp</div>
+                            <div class="kartica_igra_mini">&nbsp</div>
+                        </div>
+                        <div class="raspored">
+                            <div class="dugme_proveri">Proveri</div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row red_igra" id="red_52">
+                    <div class="col-1">&nbsp</div>
+                    <div class="col-7 kartice">
+                        <div class="kartica_igra"><img class="icon" src="skocko-dodatno/upitnik2.png" alt="?"></div>
+                        <div class="kartica_igra"><img class="icon" src="skocko-dodatno/upitnik2.png" alt="?"></div>
+                        <div class="kartica_igra"><img class="icon" src="skocko-dodatno/upitnik2.png" alt="?"></div>
+                        <div class="kartica_igra"><img class="icon" src="skocko-dodatno/upitnik2.png" alt="?"></div>
+                    </div>
+                    <div class="col-4 vertical_raspored">
+                        <div class="raspored">
+                            <div class="kartica_igra_mini">&nbsp</div>
+                            <div class="kartica_igra_mini">&nbsp</div>
+                            <div class="kartica_igra_mini">&nbsp</div>
+                            <div class="kartica_igra_mini">&nbsp</div>
+                        </div>
+                        <div class="raspored">
+                            <div class="dugme_proveri">Proveri</div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row red_igra" id="red_62">
+                    <div class="col-1">&nbsp</div>
+                    <div class="col-7 kartice">
+                        <div class="kartica_igra"><img class="icon" src="skocko-dodatno/upitnik2.png" alt="?"></div>
+                        <div class="kartica_igra"><img class="icon" src="skocko-dodatno/upitnik2.png" alt="?"></div>
+                        <div class="kartica_igra"><img class="icon" src="skocko-dodatno/upitnik2.png" alt="?"></div>
+                        <div class="kartica_igra"><img class="icon" src="skocko-dodatno/upitnik2.png" alt="?"></div>
+                    </div>
+                    <div class="col-4 vertical_raspored">
+                        <div class="raspored">
+                            <div class="kartica_igra_mini">&nbsp</div>
+                            <div class="kartica_igra_mini">&nbsp</div>
+                            <div class="kartica_igra_mini">&nbsp</div>
+                            <div class="kartica_igra_mini">&nbsp</div>
+                        </div>
+                        <div class="raspored">
+                            <div class="dugme_proveri">Proveri</div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row red_igra" id="red_72">
+                    <div class="col-1">&nbsp</div>
+                    <div class="col-7 kartice">
+                        <div class="kartica_igra"><img class="icon" src="skocko-dodatno/upitnik2.png" alt="?"></div>
+                        <div class="kartica_igra"><img class="icon" src="skocko-dodatno/upitnik2.png" alt="?"></div>
+                        <div class="kartica_igra"><img class="icon" src="skocko-dodatno/upitnik2.png" alt="?"></div>
+                        <div class="kartica_igra"><img class="icon" src="skocko-dodatno/upitnik2.png" alt="?"></div>
+                    </div>
+                    <div class="col-4 vertical_raspored">
+                        <div class="raspored">
+                            <div class="kartica_igra_mini">&nbsp</div>
+                            <div class="kartica_igra_mini">&nbsp</div>
+                            <div class="kartica_igra_mini">&nbsp</div>
+                            <div class="kartica_igra_mini">&nbsp</div>
+                        </div>
+                        <div class="raspored">
+                            <div class="dugme_proveri">Proveri</div>
+                        </div>
+
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-1">&nbsp</div>
+                    <div class="col-7 raspored">
+                        <div class="izbor_mini ne_prikazuj"><img class="icon" src="skocko-dodatno/Serbia.png"
+                                alt="Srbija"></div>
+                        <div class="izbor_mini ne_prikazuj"><img class="icon" src="skocko-dodatno/Spain.png"
+                                alt="Španija"></div>
+                        <div class="izbor_mini ne_prikazuj"><img class="icon" src="skocko-dodatno/United_States.png"
+                                alt="USA"></div>
+                        <div class="izbor_mini ne_prikazuj"><img class="icon" src="skocko-dodatno/South_Korea.png"
+                                alt="JKoreja"></div>
+                        <div class="izbor_mini ne_prikazuj"><img class="icon" src="skocko-dodatno/Canada.png"
+                                alt="Kanada"></div>
+                        <div class="izbor_mini ne_prikazuj"><img class="icon" src="skocko-dodatno/Palestine.png"
+                                alt="Palestina"></div>
+                    </div>
+                    <div class="col-4">&nbsp</div>
+                </div>
+                <br><br>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12" id="nova_igra">
+                <div class="raspored">
+                    <div class="dugme_nova_igra"> <a href="skocko-podesavanja.html">Nova igra </a> </div>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+    </div>
+</body>
+
+</html>

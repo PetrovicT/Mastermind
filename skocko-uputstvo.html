@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <title>Uputstvo za igru Skočko</title>
+</head>
+
+<body>
+
+    <div class="container" style="background-color: #f5f5ec;">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="uputstvo">Uputstvo</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-1">&nbsp</div>
+            <div class="col-10 tekst">
+                Igru igraju dva igrača. Cilj svakog igrača je da pogodi kombinaciju od 4 znaka zadatu od strane
+                drugog igrača. Igrači imaju po sedam pokušaja da pogode traženu kombinaciju. Za svaki pokušaj,
+                igrač dobija informaciju o tome koliko znakova je tačno pogođeno i na odgovarajućoj poziciji (označeno
+                <div id="zelena">zelenom</div> bojom), a koliko znakova je tačno pogođeno, ali nije na odgovarajućoj
+                poziciji (označeno <div id="narandzasta"> narandžastom</div> bojom). Igrači na raspolaganju imaju po 60 sekundi za pogađanje kombinacije
+                (nakon pokušaja igrača, zaustavlja se vreme tog igrača, nastavlja se vreme protivnika i tada on igra svoj potez). Ukoliko nijedan igrač ne pogodi kombinaciju nakon
+                svog sedmog pokušaja, ishod igre je nerešen. Ukoliko jednom od igrača istekne vreme, tada se igra završava i pobednik je igrač kom je preostalo vreme.
+                <br> <br>
+                Na stranici sa podešavanjima igrači protivniku zadaju kombinaciju od 4 znaka pri čemu na raspolaganju
+                imaju 6 znakova. Znakovi u kombinaciji smeju da se ponavljaju. Pri učitavanju stranice sa podešavanjima,
+                prvi igrač zadaje svoju kombinaciju, a nakon što je potvrdi, drugi igrač zadaje svoju kombinaciju. Nakon
+                što su obe kombinacije zadate,
+                igra može da počne!
+
+            </div>
+            <div class="col-1">&nbsp</div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-12">
+                <form action="skocko-podesavanja.html" name="saglasnost" class="forma">
+                    <div class="row">
+                        <div class="col-md-2 col-1">&nbsp</div>
+                        <div class="col-md-10 col-11">
+                            <input type="checkbox" required name="saglasnost1" id="saglasnost1">
+                            <div class="pravila"> Igrač 1: Upoznat sam sa pravilima igre. </div>
+                        </div>
+                        <div class="col-md-2 col-1">&nbsp</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 col-1">&nbsp</div>
+                        <div class="col-md-10 col-11">
+                            <input type="checkbox" required name="saglasnost1" id="saglasnost1">
+                            <div class="pravila"> Igrač 2: Upoznat sam sa pravilima igre. </div>
+                        </div>
+                        <div class="col-md-2 col-1">&nbsp</div>
+                    </div>
+                    <br>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <input class="dugme_uputstvo" type="submit" value="Pređi na postavku igre"
+                                style="float: right;">
+                        </div>
+                    </div>
+                    <br>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
